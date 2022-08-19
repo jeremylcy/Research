@@ -1,0 +1,2 @@
+python test_models.py ucf101 RGB D:\i3d-pytorch-master\data3\ test.txt ucf101_i3d_resnet50_rgb_model_best.pth.tar --arch i3d_resnet50
+python main.py ucf101 RGB D:\i3d-pytorch-master\data\ ucfTrainTestlist\ucf101_train_split_1_rawframes.txt ucfTrainTestlist\ucf101_val_split_1_rawframes.txt --arch i3d_resnet50 --clip_length 64 --lr 0.001 --lr_steps 15 30 --epochs 40 -b 1 -j 1 --dropout 0.5 --snapshot_pref ucf101_i3d_resnet50
